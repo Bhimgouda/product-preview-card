@@ -14,9 +14,12 @@ html{
 body{
     font-size: 1.4rem;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
-/* font-family: 'Fraunces', serif;
+h1{
+    font-family: 'Fraunces', serif;
+}
 
 
 /* Color Pallete */
@@ -28,5 +31,61 @@ body{
     --color-Dark-grayish-blue: hsl(228, 12%, 48%);
     --color-White: hsl(0, 0%, 100%);
 }
+
+
+.grid{
+    display: grid;
+}
+
+@media screen and (min-width:1024px) {
+    .grid--cols-2{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.price::before{
+    content: '$';
+}
+
+.price-display{
+    display: flex;
+    align-items: center;
+}
+
+.price--current{
+    color: var(--color-dark-cyan);
+    font-family: 'Fraunces', serif;
+    padding: 0;
+    margin-right: 2rem;
+}
+
+.price--striked-out{
+    text-decoration: line-through;
+    color: var(--color-Dark-grayish-blue);
+    font-size: 1.25rem;
+}
+
+
+/* Buttons */
+
+.btn{
+    cursor: pointer;
+    border: none;
+}
+
+.btn--cart{
+    display: flex;
+    background-color: var(--color-dark-cyan);
+    color: white;
+    padding: 1.5rem;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.icon--cart{
+    margin-right: 1rem;
+}
+
 
 
