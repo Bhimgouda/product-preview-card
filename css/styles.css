@@ -56,6 +56,10 @@ h1{
     align-items: center;
 }
 
+.product__price-display h1{
+    margin: 0;
+}
+
 .price--current{
     color: var(--color-dark-cyan);
     font-family: 'Fraunces', serif;
@@ -112,6 +116,7 @@ h1{
 
 .product__desc{
     line-height: 1.7;
+    margin-bottom: 0;
 }
 
 
