@@ -15,10 +15,12 @@ body{
     font-size: 1.4rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    color: var(--color-Dark-grayish-blue);
 }
 
 h1{
     font-family: 'Fraunces', serif;
+    color: black;
 }
 
 
@@ -47,7 +49,7 @@ h1{
     content: '$';
 }
 
-.price-display{
+.product__price-display{
     display: flex;
     align-items: center;
 }
@@ -85,6 +87,19 @@ h1{
 
 .icon--cart{
     margin-right: 1rem;
+}
+
+
+
+/* product Info */
+
+.product__name{
+    margin: 1rem 0 1.5rem;
+}
+
+.product__category{
+    letter-spacing: 0.5rem;
+    font-size: 1.2rem;
 }
 
 
